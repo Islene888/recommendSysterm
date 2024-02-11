@@ -1,21 +1,11 @@
-package com.atguigu.offline
+package com.Sohu.offline
 
 import breeze.numerics.sqrt
-import com.atguigu.offline.OfflineRecommender.MONGODB_RATING_COLLECTION
+import com.Sohu.offline.OfflineRecommender.MONGODB_RATING_COLLECTION
 import org.apache.spark.SparkConf
 import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
-
-/**
-  * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved 
-  *
-  * Project: MovieRecommendSystem
-  * Package: com.atguigu.offline
-  * Version: 1.0
-  *
-  * Created by wushengran on 2019/4/3 8:51
-  */
 
 object ALSTrainer {
   def main(args: Array[String]): Unit = {

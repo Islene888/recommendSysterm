@@ -1,19 +1,10 @@
-package com.atguigu.offline
+package com.Sohu.offline
 
 import org.apache.spark.SparkConf
 import org.apache.spark.mllib.recommendation.{ALS, Rating}
 import org.apache.spark.sql.SparkSession
 import org.jblas.DoubleMatrix
 
-/**
-  * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved 
-  *
-  * Project: MovieRecommendSystem
-  * Package: com.atguigu.offline
-  * Version: 1.0
-  *
-  * Created by wushengran on 2019/4/2 14:17
-  */
 
 // 基于评分数据的LFM，只需要rating数据
 case class MovieRating(uid: Int, mid: Int, score: Double, timestamp: Int )

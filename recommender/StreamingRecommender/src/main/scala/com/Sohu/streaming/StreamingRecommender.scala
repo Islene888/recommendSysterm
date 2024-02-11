@@ -1,4 +1,4 @@
-package com.atguigu.streaming
+package com.Sohu.streaming
 
 import com.mongodb.casbah.commons.MongoDBObject
 import com.mongodb.casbah.{MongoClient, MongoClientURI}
@@ -10,15 +10,6 @@ import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, Loca
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import redis.clients.jedis.Jedis
 
-/**
-  * Copyright (c) 2018-2028 尚硅谷 All Rights Reserved 
-  *
-  * Project: MovieRecommendSystem
-  * Package: com.atguigu.streaming
-  * Version: 1.0
-  *
-  * Created by wushengran on 2019/4/3 10:26
-  */
 
 // 定义连接助手对象，序列化
 object ConnHelper extends Serializable{
